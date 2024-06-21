@@ -1,9 +1,5 @@
 import logging
-
-from typing import Annotated
-
-
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI
 
 from ports.into.status_response import StatusResponse
 from utils.env import env_settings
