@@ -13,7 +13,7 @@ RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python
 COPY ./pyproject.toml ./poetry.lock /app/
 
 # Allow installing dev dependencies to run tests
-RUN poetry install
+RUN poetry install --no-dev
 
 COPY ./src/ /app/
 
