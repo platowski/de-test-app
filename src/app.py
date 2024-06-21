@@ -2,7 +2,6 @@ import logging
 from fastapi import FastAPI
 
 from ports.into.status_response import StatusResponse
-from utils.env import env_settings
 
 from adapters.into.http.users import router as users_router
 

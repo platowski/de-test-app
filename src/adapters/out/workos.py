@@ -9,6 +9,7 @@ class WorkOsAdapter:
         self.client = client
 
     def get_users(self, dto: GetUsersPageDTO) -> UsersPageDTO:
+        # no try, let it fail. At least until it becomes a problem
         users_response = self.client.user_management.list_users(
             limit=dto.page_size, before=dto.before, after=dto.after, email=dto.email
         )
