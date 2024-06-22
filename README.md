@@ -23,7 +23,10 @@ Requirements:
 -   Python 3.12+
 -   Poetry
 
+Project is using Makefile to simplify the process. Every shell command starts with `make` prefix and should be run from main project directory.
+
 Installation:
+
 -   `make init` //warning: api key pushed to repo, should be moved i.e. to AWS SSM 
 - replace `WORKOS_API_KEY` and `WORKOS_CLIENT_ID` in `.env` with your own WorkOs credentials or use provided instance in dist 
 -   `make build`
@@ -32,6 +35,10 @@ Installation:
 Running project:
 
 -  `make run`
+
+Running tests:
+
+-   `make test`
 
 ## API Documentation
 
