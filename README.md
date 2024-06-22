@@ -20,7 +20,7 @@ Hexagonal Architecture is something I'm used to, so I followed the pattern even 
 
 Requirements:
 
--   Python 3.12+
+-   Python 3.10+
 -   Poetry
 
 Project is using Makefile to simplify the process. Every shell command starts with `make` prefix and should be run from main project directory.
