@@ -33,6 +33,8 @@ Running project:
 
 -  `make run`
 
+## API Documentation
+
 Running project exposes Swagger interface at http://localhost:8008/docs
 
 

@@ -20,6 +20,9 @@ up:
 down:
 	docker-compose ${DOCKER_COMPOSE_FILES} down --volumes
 
+test:
+	docker-compose  ${DOCKER_COMPOSE_FILES} run app pytest
+
 
 run_black:
 	poetry run blackd
