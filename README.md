@@ -20,6 +20,10 @@ Hexagonal Architecture is something I'm used to, so I followed the pattern even 
 
 Requirements:
 
+-   Docker
+
+Requirements (dev):
+
 -   Python 3.10+
 -   Poetry
 
