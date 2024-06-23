@@ -1,10 +1,11 @@
 from fastapi import Depends
 
 from ports.into.users import UserDTO, UsersPageDTO, GetUsersPageDTO
+from ports.out.users import UsersPort
 from utils.workos_client import get_client
 
 
-class WorkOsAdapter:
+class WorkOsAdapter(UsersPort):
     def __init__(self, client=Depends(get_client)):
         self.client = client
 
